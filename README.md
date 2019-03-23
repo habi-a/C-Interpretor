@@ -3,6 +3,8 @@ An interpreter in C
 
 ![Alt Text](rsc/demo.gif)
 
+NOTE: Ugly code
+
 ## Install
 * Clone the project
 * Compile sources with make
