@@ -1,5 +1,5 @@
 # C-Interpretor
-A minimalist interpreter in C
+An interpreter in C
 
 ![Alt Text](rsc/demo.gif)
 
@@ -7,5 +7,12 @@ A minimalist interpreter in C
 * Clone the project
 * Compile sources with make
 >  $> make
-* Run the interpretor
->  $> ./interactive
+* Run the interpreter
+>  $> ./interpretor
+
+## TO-DO List
+* FOR/WHILE
+* FUNCTIONS
+* STRUCT
+* TYPEDEF
+* POINTER
