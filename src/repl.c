@@ -26,9 +26,10 @@ static void     loop_repl(t_var_list *var_list, t_func_list *func_list, bool *is
     cin = NULL;
     size_cin = 0;
     repl_exit = false;
-    printf("> ");
+    printf("\033[0;36m>> \033[0m");
     while (getline(&cin, &size_cin, stdin) != -1 && cin && !repl_exit)
     {
+        printf("\033[0;32m");
         cin[strlen(cin) - 1] = '\0';
         if (!strcmp(cin, "exit"))
             repl_exit = true;
@@ -37,8 +38,9 @@ static void     loop_repl(t_var_list *var_list, t_func_list *func_list, bool *is
         free(cin);
         cin = NULL;
         size_cin = 0;
+        printf("\033[0m");
 	if (!repl_exit)
-	    printf("\n> ");
+	    printf("\n\033[0;36m>> \033[0m");
 	else
 	    break;
     }
@@ -55,7 +57,7 @@ void            launch_repl(int argc, char **argv)
     init_list_variables(argc, argv, &var_list);
     init_list_functions(&func_list);
     fill_built_int_functions(&func_list);
-    puts("Welcome to the C-Interpetor by habi-a");
+    puts("\033[0;35mWelcome to the C-Interpetor by habi-a\033[0m");
     loop_repl(&var_list, &func_list, &is_comment);
     free_list_variables(&var_list);
     free_list_functions(&func_list);
