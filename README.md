@@ -15,8 +15,9 @@ NOTE: Ugly code
 >  $> ./interpretor
 
 ## TO-DO List
+* MULTI-LINE INPUT
+* IF/ELSE
 * FOR/WHILE
 * FUNCTIONS
-* STRUCT
+* STRUCT/CLASS
 * TYPEDEF
-* POINTER
